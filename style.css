@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #F9F4EC;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.header {
+  background-color: #F9F4EC;
+    border-bottom: 1px solid #f8f0de;
+  color: #fff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+}
+.header .container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #EE5626;
+}
+
+.header .container .logo h2 {
+    padding-left: 7px;
+    font-family: "poppins", sans-serif;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1; 
+  padding: 40px 0;
+}
+
+.main .container {
+    text-align: center;
+}
+.main .container h1 {
+    font-size: 48px;
+}
+.main .container img {
+    margin-bottom: 37px;
+    margin-top: 29px;
+}
+
+.footer {
+  background-color: #F9F4EC;
+  color: #000;
+}
+
+.footer .container {
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.footer .container span {
+    color: orangered;
+    font-weight: 600;
+    text-decoration: underline;
+}
