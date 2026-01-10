@@ -149,6 +149,10 @@ body {
     margin-bottom: 12px;
 }
 
+.main .container .post .post-info .post-title a {
+    margin-left: auto;
+}
+
 .main .container .post .post-info .post-title img {
     width: 10px;
     height: 10px;
