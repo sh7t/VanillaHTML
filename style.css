@@ -125,6 +125,7 @@ body {
     width: 384px;
     height: 580px;
     padding: 24px;
+    box-shadow: 0 6px 13px #00000020;
 }
 
 .main .container .post img {
