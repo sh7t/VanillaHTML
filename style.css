@@ -17,13 +17,14 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     background-color: #F9F5FF;
-    background-image: url('./assets/background-lines.svg');
+    background-image: url('assets/UI/background-lines.svg');
     background-repeat: no-repeat;
     background-position: center 338px;
 }
 
 .header {
     margin-top: 96px;
+    text-align: center;
 }
 
 .header .our-blog {
@@ -43,14 +44,22 @@ body {
 }
 
 .header h1 {
-    margin: 16px auto 0 auto;
+    margin: 16px auto 0;
     text-align: center;
     font-weight: 600;
     font-size: 48px;
     color: #42307D;
+    width: fit-content;
 }
 
-.header h2 {
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #42307D;
+}
+
+
+.header p {
     margin: 26px auto 0 auto;
     text-align: center;
     font-weight: 400;
@@ -78,7 +87,10 @@ body {
     font-weight: 400;
     color: #667085;
 
-    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 10px center;
+    background-color: white;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
     background-size: 16px 16px;
 }
 
@@ -96,6 +108,10 @@ body {
 }
 
 .main .container {
+
+}
+
+.main .container .posts {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -104,22 +120,125 @@ body {
 
 .main .container .post {
     background-color: white;
-    flex: 0 1 340px;
+    display: flex;
+    flex-direction: column;
     width: 384px;
     height: 580px;
+    padding: 24px;
 }
 
 .main .container .post img {
     width: 336px;
     height: 240px;
-    margin: 24px 24px auto 24px;
+}
 
+.main .container .post .post-info .theme {
+    color: #6941C6;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.main .container .post .post-info .post-title {
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 12px;
+}
+
+.main .container .post .post-info .post-title img {
+    width: 10px;
+    height: 10px;
+}
+
+.main .container .post .post-info .post-description {
+    color: #667085;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main .container .post .post-author {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.main .container .post .post-author .post-author-info {
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.main .container .post .post-author img {
+    width: 40px;
+    height: 40px;
+}
+
+.main .container .post .post-author p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #101828;
+}
+
+.main .container .post .post-author span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #667085;
+}
+
+.main .container .load-more a, .main .container .load-more a:hover {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px auto 0 auto;
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #F2EBFF;
+    border-radius: 8px;
+    background-color: #F2EBFF;
+    width: fit-content;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.main .container .load-more a h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6941C6;
 }
 
 .footer {
-
+    margin-top: 96px;
+    border-top: 1px solid #ede6ff;
 }
 
 .footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.footer .container .creator {
+    color: #6941C6;
+    font-weight: 600;
+    margin-left: 95px;
+}
+
+.footer .container .creator span {
+    color: orangered;
+    font-weight: 400;
+}
+
+.footer .container .designer {
+    color: orangered;
+    font-weight: 400;
+    margin-right: 95px;
+}
+
+.footer .container .designer a, .footer .container .designer a:hover {
+    color: #6941C6;
+    font-weight: 600;
+    text-decoration: none;
 }
